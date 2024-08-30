@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EcoAcademy
+
+EcoAcademy is an environmental education platform designed to raise awareness and promote sustainable practices. Our mission is to empower individuals and communities with the knowledge and tools to make a positive impact on the environment.
+
+## Features
+
+- Interactive lessons and modules on various environmental topics
+- Gamified learning experiences to engage users
+- Community forums for discussions and knowledge sharing
+- Personalized learning paths and progress tracking
+- Resources and tools for implementing sustainable practices
 
 ## Getting Started
 
-First, run the development server:
+To get started with EcoAcademy, you can either use the open-source version or obtain a commercial license.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Open-Source Version
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+EcoAcademy is available under the GNU General Public License version 3 (GPLv3). You can find the full license text in the [LICENSE](LICENSE) file.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Commercial License
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+For companies or individuals interested in using EcoAcademy in a proprietary or commercial product, we offer a commercial license. The commercial license allows you to use, modify, and distribute EcoAcademy without adhering to the GPLv3's copyleft obligations.
 
-## Learn More
+To inquire about obtaining a commercial license, please contact us at:
 
-To learn more about Next.js, take a look at the following resources:
+Email: sales@archanaut.com
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+More information about the commercial license terms and pricing will be provided upon request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+We welcome contributions from the open-source community! If you'd like to contribute to EcoAcademy, please follow our [Contributing Guidelines](CONTRIBUTING.md).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you need help or have any questions, please check our [Documentation](https://academy.archanaut.com/docs) or reach out to our support team at support@ecoacademy.org.
+
+## Acknowledgments
+
+We would like to express our gratitude to the following organizations and individuals for their contributions and support:
+
+- Archanaut
+
+## License
+
+EcoAcademy is dual-licensed under the GPLv3 and a commercial license. See the [LICENSE](LICENSE) file for the GPLv3 license text and the [COMMERCIAL-LICENSE](COMMERCIAL-LICENSE) file for information about obtaining a commercial license.
