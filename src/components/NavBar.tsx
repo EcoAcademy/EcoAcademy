@@ -50,11 +50,11 @@ const NavBar: React.FC = () => {
 
   const performSearch = (query: string): SearchResult[] => {
     const data: SearchResult[] = [
-      { id: 1, name: 'ArchAcademy Learning Platform', description: 'An innovative platform offering a variety of courses for students of all ages.' },
+      { id: 1, name: 'EcoAcademy Learning Platform', description: 'An innovative platform offering a variety of courses for students of all ages.' },
       { id: 2, name: 'Project-Based Learning', description: 'Hands-on projects designed to enhance practical skills and real-world applications.' },
       { id: 3, name: 'Teacher Training Programs', description: 'Comprehensive training programs for educators to improve teaching methodologies.' },
       { id: 4, name: 'Parent Engagement Workshops', description: 'Workshops aimed at empowering parents to support their children’s education effectively.' },
-      { id: 5, name: 'Student Success Stories', description: 'Highlighting achievements of students who have excelled through ArchAcademy’s programs.' },
+      { id: 5, name: 'Student Success Stories', description: 'Highlighting achievements of students who have excelled through EcoAcademy’s programs.' },
     ];
 
     return data.filter(item =>
@@ -82,14 +82,14 @@ const NavBar: React.FC = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <Image
-              src="/ARcha.png"
-              alt="ArchAcademy Logo"
+              src="/ecoacademy_logo.png"
+              alt="EcoAcademy Logo"
               width={90}
               height={90}
               className="mr-3"
             />
             <Link href="/" className="text-green-400 text-3xl font-bold hover:text-green-500">
-              ArchAcademy
+              EcoAcademy
             </Link>
           </div>
           <div className="hidden md:flex space-x-8">

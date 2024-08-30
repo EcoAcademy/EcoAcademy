@@ -75,7 +75,7 @@ const SignupPage: React.FC = () => {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4 text-gray-800">Sign Up</h1>
         <p className="text-lg text-gray-600">
-          Welcome to ArchAcademy! Create an account to start exploring.
+          Welcome to EcoAcademy! Create an account to start exploring.
         </p>
       </div>
 

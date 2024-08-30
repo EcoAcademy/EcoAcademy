@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
         <>
             <Head>
                 <title>Privacy Policy</title>
-                <meta name="description" content="Privacy Policy for ArchAcademy" />
+                <meta name="description" content="Privacy Policy for EcoAcademy" />
             </Head>
             <div className="min-h-screen bg-gray-100 p-8">
                 <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
 
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">1. Introduction</h2>
                     <p className="text-gray-700 mb-4">
-                        Welcome to ArchAcademy. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose information about you when you use our website located at [yourwebsite.com] (the "Site") and the services provided by ArchAcademy (the "Services").
+                        Welcome to EcoAcademy. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose information about you when you use our website located at [yourwebsite.com] (the "Site") and the services provided by EcoAcademy (the "Services").
                     </p>
 
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">2. Information We Collect</h2>
@@ -73,7 +73,7 @@ const PrivacyPolicy = () => {
                         If you have any questions about this Privacy Policy, please contact us at:
                     </p>
                     <p className="text-gray-700 mb-2">Email: support@[yourwebsite.com]</p>
-                    <p className="text-gray-700">Address: [ArchAcademy Address]</p>
+                    <p className="text-gray-700">Address: [EcoAcademy Address]</p>
                 </div>
             </div>
         </>

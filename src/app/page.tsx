@@ -5,7 +5,7 @@ import Footer from '../components/Footer'; // Import the Footer component
 
 const Home: React.FC = () => (
   <div className="container mx-auto py-8">
-    <h1 className="text-4xl font-bold mb-4 text-center">Welcome to ArchAcademy!</h1>
+    <h1 className="text-4xl font-bold mb-4 text-center">Welcome to EcoAcademy!</h1>
     <p className="text-gray-700 mb-8 text-center">
       Our mission is to create a fun and free learning space aimed at students, teaching them all about the net-zero world.
     </p>
@@ -90,7 +90,7 @@ const Home: React.FC = () => (
         <ul className="list-disc list-inside text-left text-gray-700 mb-2">
           <li>Encourage your kids to reduce, reuse, and recycle materials to minimize waste.</li>
           <li>Make a fun sorting activity with your kids to teach them about the 3 bins.</li>
-          <li>Share ArchAcademy with friends and all join in the fun.</li>
+          <li>Share EcoAcademy with friends and all join in the fun.</li>
           <li>Visit archanaut.com.au to learn more.</li>
           <li>Plant trees with your family to support reforestation efforts.</li>
         </ul>

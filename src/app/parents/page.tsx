@@ -8,7 +8,7 @@ export default function ParentsPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Parents Section</h1>
         <p className="text-lg text-gray-700">
-          Welcome to the Parents section of ArchAcademy! Here, you can find resources and tools to help support your child's learning journey.
+          Welcome to the Parents section of EcoAcademy! Here, you can find resources and tools to help support your child's learning journey.
         </p>
       </div>
       

@@ -9,7 +9,7 @@ import NavBar from "../components/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ArchAcademy | The Net-Zero Learning Academy",
+  title: "EcoAcademy | The Net-Zero Learning Academy",
   description: "Our mission is to create a fun and free learning space aimed at students, teaching them all about the net-zero world.",
 };
 

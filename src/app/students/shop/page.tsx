@@ -11,7 +11,7 @@ const ShopPage: React.FC = () => {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Tutorials</h1>
         <p className="text-lg text-gray-700">
-          Welcome to ArchAcademy's Tutorials, where you can learn how to use sustainable products and solutions to support your net-zero journey.
+          Welcome to EcoAcademy's Tutorials, where you can learn how to use sustainable products and solutions to support your net-zero journey.
         </p>
       </div>
 

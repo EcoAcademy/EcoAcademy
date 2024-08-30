@@ -14,7 +14,7 @@ const StudentsPage: React.FC = () => {
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold mb-4 text-gray-800">Welcome Students</h1>
           <p className="text-xl text-gray-600">
-            Dive into the world of ArchAcademy, where creativity meets learning.
+            Dive into the world of EcoAcademy, where creativity meets learning.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const StudentsPage: React.FC = () => {
           <div className="text-center bg-white rounded-lg shadow-lg p-8 w-1/3 mx-2">
             <h2 className="text-3xl font-semibold mb-6 text-gray-800">Explore Our Features</h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Discover the various opportunities and resources available to you as a student at ArchAcademy. Whether you're looking to create, explore, learn, shop, sign up, or log in, we've got you covered.
+              Discover the various opportunities and resources available to you as a student at EcoAcademy. Whether you're looking to create, explore, learn, shop, sign up, or log in, we've got you covered.
             </p>
           </div>
 

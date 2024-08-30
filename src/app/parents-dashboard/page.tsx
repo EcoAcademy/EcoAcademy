@@ -25,7 +25,7 @@ export default function ParentsPage() {
           {userName ? `Welcome, ${userName}!` : "Welcome to the Parents Section"}
         </h1>
         <p className="text-lg text-gray-700 mb-6">
-          At ArchAcademy, we believe that parents play a crucial role in their
+          At EcoAcademy, we believe that parents play a crucial role in their
           child's learning journey. Here, you can find resources and tools to
           help support your child's education and foster their curiosity about
           sustainability and net-zero.
