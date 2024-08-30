@@ -1,22 +1,23 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 
 export default function ParentsPage() {
   const router = useRouter();
   const [userName, setUserName] = useState("");
 
+  const searchParams = useSearchParams();
+  
   useEffect(() => {
-    // Check if router.query is defined
-    if (router.query) {
-      // Assuming the user's name is passed as a query parameter from the login page
-      const name = router.query.name as string;
+    // Check if searchParams has values
+    if (searchParams) {
+      const name = (searchParams.get('name')); // Access specific query parameter here
       if (name) {
         setUserName(name);
       }
     }
-  }, [router.query]);
+  }, [searchParams]);
 
   return (
     <div className="container mx-auto py-12 px-6">
@@ -26,8 +27,8 @@ export default function ParentsPage() {
         </h1>
         <p className="text-lg text-gray-700 mb-6">
           At EcoAcademy, we believe that parents play a crucial role in their
-          child's learning journey. Here, you can find resources and tools to
-          help support your child's education and foster their curiosity about
+          child&apos;s learning journey. Here, you can find resources and tools to
+          help support your child&apos;s education and foster their curiosity about
           sustainability and net-zero.
         </p>
       </div>
@@ -72,16 +73,16 @@ export default function ParentsPage() {
           How You Can Support Your Child
         </h2>
         <p className="text-gray-700 mb-6">
-          As a parent, you play a crucial role in your child's education. Here
-          are some ways you can support your child's learning about net-zero and
+          As a parent, you play a crucial role in your child&apos;s education. Here
+          are some ways you can support your child&apos;s learning about net-zero and
           sustainability:
         </p>
         <ul className="list-disc list-inside text-gray-700 mb-4">
           <li>Encourage curiosity and ask questions about sustainability topics.</li>
-          <li>Explore resources together and discuss what you've learned.</li>
+          <li>Explore resources together and discuss what you&apos;ve learned.</li>
           <li>Support hands-on projects that teach about renewable energy and conservation.</li>
           <li>Model sustainable practices at home, such as recycling and energy conservation.</li>
-          <li>Stay informed about your child's progress and provide positive reinforcement.</li>
+          <li>Stay informed about your child&apos;s progress and provide positive reinforcement.</li>
         </ul>
         <Link href="/parents/resources">
           <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 mt-4">

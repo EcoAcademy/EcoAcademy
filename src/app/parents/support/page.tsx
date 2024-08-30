@@ -11,7 +11,7 @@ const ParentalControls: React.FC = () => {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Parental Controls</h1>
         <p className="text-lg text-gray-700">
-          Manage your child's learning experience and monitor their progress with our parental control tools.
+          Manage your child&apos;s learning experience and monitor their progress with our parental control tools.
         </p>
       </div>
 
@@ -39,7 +39,7 @@ const ParentalControls: React.FC = () => {
         <div className="mb-6">
           <h2 className="text-2xl font-semibold mb-4">Progress Monitoring</h2>
           <p className="text-gray-700 mb-4">
-            Track your child's progress through various courses and activities. Get insights into their strengths and areas for improvement.
+            Track your child&apos;s progress through various courses and activities. Get insights into their strengths and areas for improvement.
           </p>
           <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-yellow-500">
             View Progress
@@ -49,7 +49,7 @@ const ParentalControls: React.FC = () => {
         <div className="mb-6">
           <h2 className="text-2xl font-semibold mb-4">Privacy Settings</h2>
           <p className="text-gray-700 mb-4">
-            Manage your child's privacy settings. Control what information is shared and who can interact with them on the platform.
+            Manage your child&apos;s privacy settings. Control what information is shared and who can interact with them on the platform.
           </p>
           <button className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500">
             Adjust Privacy

@@ -22,19 +22,6 @@ export default function StudentAccount() {
     { icon: freeSolidSvgIcons.faSeedling, name: 'Seedling' },
     { icon: freeSolidSvgIcons.faBolt, name: 'Bolt' },
     { icon: freeSolidSvgIcons.faGlobe, name: 'Globe' },
-    { _icon: freeSolidSvgIcons.faSunflower,get icon_1() {
-        return this._icon;
-      },
-set icon_1(value) {
-        this._icon = value;
-      },
-get icon() {
-        return this._icon;
-      },
-set icon(value) {
-        this._icon = value;
-      },
- name: 'Sunflower' },
   ];
 
   const router = useRouter(); // Initialize useRouter hook from next/navigation

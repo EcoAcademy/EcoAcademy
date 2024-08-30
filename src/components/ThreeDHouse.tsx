@@ -1,17 +1,39 @@
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { useDrop } from 'react-dnd';
-import { useState, useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import * as THREE from 'three';
+import { Mesh } from 'three';
 
-const ThreeDHouse = ({ onDrop, droppedItems }) => {
+// Define the type for the dropped item
+interface DroppedItem {
+  id: string;
+  position: [number, number, number];
+}
+
+// Define the prop types for the ThreeDHouse component
+interface ThreeDHouseProps {
+  onDrop: (itemId: string, position: [number, number, number]) => void;
+  droppedItems: DroppedItem[];
+}
+
+const ThreeDHouse = ({ onDrop, droppedItems }: ThreeDHouseProps) => {
+  // Create refs
+  const canvasRef = useRef<HTMLDivElement>(null);
+  const cameraRef = useRef<THREE.PerspectiveCamera>(null);
+  const houseBaseRef = useRef<Mesh>(null);
+        
+  // Use dropRef for react-dnd target
   const [{ isOver }, dropRef] = useDrop({
     accept: 'item',
     drop: (item, monitor) => {
-      const offset = monitor.getClientOffset();
-      const canvas = dropRef.current;
-      if (canvas) {
-        const boundingRect = canvas.getBoundingClientRect();
+      const offset = monitor.getClientOffset() || { x: 0, y: 0 };
+      const canvasElement = canvasRef.current?.querySelector('canvas');
+      const camera = cameraRef.current;
+      const houseBase = houseBaseRef.current;
+
+      if (canvasElement && camera && houseBase) {
+        const boundingRect = canvasElement.getBoundingClientRect();
         const x = (offset.x - boundingRect.left) / boundingRect.width * 2 - 1;
         const y = -(offset.y - boundingRect.top) / boundingRect.height * 2 + 1;
         const vector = new THREE.Vector3(x, y, 0.5);
@@ -29,18 +51,35 @@ const ThreeDHouse = ({ onDrop, droppedItems }) => {
     }),
   });
 
-  const camera = useRef();
-  const houseBase = useRef();
+  // Callback ref function for canvas
+  const setRef = (node: HTMLDivElement | null) => {
+    if (node) {
+      dropRef(node);
+      canvasRef.current = node;
+    }
+  };
+
+  // Handle updates to refs in useEffect
+  useEffect(() => {
+    const canvasElement = canvasRef.current?.querySelector('canvas');
+    const camera = cameraRef.current;
+    const houseBase = houseBaseRef.current;
+
+    if (canvasElement && camera && houseBase) {
+      // Perform any operations needed with refs here
+    }
+  }, [canvasRef.current, cameraRef.current, houseBaseRef.current]);
 
   return (
-    <div ref={dropRef} style={{ position: 'relative' }}>
-      <Canvas style={{ height: '400px', width: '100%' }} camera={{ position: [0, 5, 10], fov: 75 }}>
+    <div ref={setRef} style={{ position: 'relative' }}>
+      <Canvas style={{ height: '400px', width: '100%' }} camera={{ position: [0, 5, 10], fov: 75 }} ref={cameraRef}>
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
         <OrbitControls />
-        
+
+
         {/* House Base */}
-        <mesh ref={houseBase} position={[0, 0, 0]}>
+        <mesh ref={houseBaseRef} position={[0, 0, 0]}>
           <boxGeometry args={[4, 2.5, 4]} />
           <meshStandardMaterial color={'#DFAEAE'} />
         </mesh>

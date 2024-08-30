@@ -5,8 +5,16 @@ import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolderOpen, faPlus } from '@fortawesome/free-solid-svg-icons';
 
+// Define the type for a project
+type Project = {
+  id: number;
+  name: string;
+  description: string;
+};
+
 export default function StudentProjectsPage() {
-  const [projects, setProjects] = useState([]);
+  // Use the Project type with useState
+  const [projects, setProjects] = useState<Project[]>([]);
   const [newProjectName, setNewProjectName] = useState('');
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
@@ -17,7 +25,7 @@ export default function StudentProjectsPage() {
 
   const handleAddProject = () => {
     if (newProjectName.trim() !== '') {
-      const newProject = {
+      const newProject: Project = {
         id: projects.length + 1,
         name: newProjectName,
         description: '',
@@ -55,7 +63,7 @@ export default function StudentProjectsPage() {
           </div>
           {projects.length === 0 ? (
             <div className="text-center text-gray-600 mb-4">
-              You don't have any projects.
+              You don&apos;t have any projects.
             </div>
           ) : (
             projects.map((project) => (

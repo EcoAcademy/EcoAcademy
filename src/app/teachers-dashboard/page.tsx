@@ -6,7 +6,7 @@ export default function TeachersPage() {
       <h1 className="text-4xl font-bold mb-6 text-center">Teachers</h1>
       <div className="mb-10 text-center">
         <p className="text-lg text-gray-700 mb-4">
-          Welcome to the Teachers section of EcoAcademy! Here, you'll find resources and tools to help you teach students about net-zero and sustainability.
+          Welcome to the Teachers section of EcoAcademy! Here, you&apos;ll find resources and tools to help you teach students about net-zero and sustainability.
         </p>
         <p className="text-lg text-gray-700">
           Explore our curriculum resources, professional development opportunities, and community forum to enhance your teaching experience.

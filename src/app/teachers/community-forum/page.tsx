@@ -1,5 +1,4 @@
-'use client';
-
+"use client";
 import React, { useState, useEffect } from 'react';
 
 interface Post {
@@ -20,7 +19,7 @@ interface Reply {
 export default function CommunityForumPage() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [newPost, setNewPost] = useState({ title: '', content: '' });
-  const [newReply, setNewReply] = useState({ content: '', postId: null, author: '' });
+  const [newReply, setNewReply] = useState<{ content: string; postId: number | null; author: string }>({ content: '', postId: null, author: '' });
   const [error, setError] = useState('');
 
   useEffect(() => {

@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
 
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">1. Introduction</h2>
                     <p className="text-gray-700 mb-4">
-                        Welcome to EcoAcademy. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose information about you when you use our website located at [yourwebsite.com] (the "Site") and the services provided by EcoAcademy (the "Services").
+                        Welcome to EcoAcademy. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose information about you when you use our website located at [ecoacademy.archanaut.com] (the &quot;Site&quot;) and the services provided by EcoAcademy (the &quot;Services&quot;).
                     </p>
 
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">2. Information We Collect</h2>

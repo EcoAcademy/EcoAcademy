@@ -4,20 +4,33 @@ import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSolarPanel, faTree, faWater, faLeaf, faRecycle, faWind } from '@fortawesome/free-solid-svg-icons';
-import { DndProvider, useDrag, useDrop } from 'react-dnd';
+import { faSolarPanel, faTree, faWater, faLeaf, faRecycle, faWind, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { DndProvider, useDrag } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import ThreeDHouse from '../../../components/ThreeDHouse';
 
 library.add(faSolarPanel, faTree, faWater, faLeaf, faRecycle, faWind);
 
+// Define a type for icon names
+type IconName = 'solar-panel' | 'tree' | 'water' | 'leaf' | 'recycle' | 'wind';
+
+// Map icon names to FontAwesome icons
+const iconMap: Record<IconName, IconDefinition> = {
+  'solar-panel': faSolarPanel,
+  'tree': faTree,
+  'water': faWater,
+  'leaf': faLeaf,
+  'recycle': faRecycle,
+  'wind': faWind,
+};
+
 const items = [
-  { id: 1, name: 'Solar Panel', icon: 'solar-panel', points: 10 },
-  { id: 2, name: 'Tree', icon: 'tree', points: 5 },
-  { id: 3, name: 'Rainwater Collector', icon: 'water', points: 7 },
-  { id: 4, name: 'Compost Bin', icon: 'leaf', points: 8 },
-  { id: 5, name: 'Recycling Bin', icon: 'recycle', points: 6 },
-  { id: 6, name: 'Wind Turbine', icon: 'wind', points: 15 },
+  { id: 1, name: 'Solar Panel', icon: 'solar-panel' as IconName, points: 10 },
+  { id: 2, name: 'Tree', icon: 'tree' as IconName, points: 5 },
+  { id: 3, name: 'Rainwater Collector', icon: 'water' as IconName, points: 7 },
+  { id: 4, name: 'Compost Bin', icon: 'leaf' as IconName, points: 8 },
+  { id: 5, name: 'Recycling Bin', icon: 'recycle' as IconName, points: 6 },
+  { id: 6, name: 'Wind Turbine', icon: 'wind' as IconName, points: 15 },
 ];
 
 const DraggableItem = ({ item }: { item: typeof items[0] }) => {
@@ -31,7 +44,7 @@ const DraggableItem = ({ item }: { item: typeof items[0] }) => {
 
   return (
     <div
-      ref={dragRef}
+      ref={dragRef as unknown as React.Ref<HTMLDivElement>}
       style={{
         cursor: 'pointer',
         opacity: isDragging ? 0.5 : 1,
@@ -46,7 +59,7 @@ const DraggableItem = ({ item }: { item: typeof items[0] }) => {
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
       }}
     >
-      <FontAwesomeIcon icon={item.icon} size="3x" />
+      <FontAwesomeIcon icon={iconMap[item.icon]} size="3x" />
       <p style={{ marginTop: '10px', fontWeight: 'bold' }}>{item.name}</p>
       <p style={{ marginTop: '5px', color: '#757575' }}>+{item.points} points</p>
     </div>

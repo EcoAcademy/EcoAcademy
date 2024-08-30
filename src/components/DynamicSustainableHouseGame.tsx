@@ -26,7 +26,7 @@ const DraggableItem = ({ item }: { item: typeof items[0] }) => {
 
   return (
     <div
-      ref={dragRef}
+      ref={dragRef as unknown as React.Ref<HTMLDivElement>}
       style={{
         cursor: 'pointer',
         opacity: isDragging ? 0.5 : 1,

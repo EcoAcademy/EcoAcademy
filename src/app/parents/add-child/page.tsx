@@ -48,7 +48,7 @@ const AddChildPage: NextPage = () => {
         <div className="bg-white shadow-md rounded-lg p-6">
           <form onSubmit={handleSubmit}>
             <div className="mb-6">
-              <label htmlFor="childName" className="block text-gray-700 font-semibold mb-2">Child's Name</label>
+              <label htmlFor="childName" className="block text-gray-700 font-semibold mb-2">Child&apos;s Name</label>
               <input
                 type="text"
                 id="childName"
@@ -59,7 +59,7 @@ const AddChildPage: NextPage = () => {
               />
             </div>
             <div className="mb-6">
-              <label htmlFor="childAge" className="block text-gray-700 font-semibold mb-2">Child's Age</label>
+              <label htmlFor="childAge" className="block text-gray-700 font-semibold mb-2">Child&apos;s Age</label>
               <input
                 type="number"
                 id="childAge"
@@ -70,7 +70,7 @@ const AddChildPage: NextPage = () => {
               />
             </div>
             <div className="mb-6">
-              <label htmlFor="childGrade" className="block text-gray-700 font-semibold mb-2">Child's Grade/Year</label>
+              <label htmlFor="childGrade" className="block text-gray-700 font-semibold mb-2">Child&apos;s Grade/Year</label>
               <input
                 type="text"
                 id="childGrade"
@@ -81,7 +81,7 @@ const AddChildPage: NextPage = () => {
               />
             </div>
             <div className="mb-6">
-              <label htmlFor="childGender" className="block text-gray-700 font-semibold mb-2">Child's Gender</label>
+              <label htmlFor="childGender" className="block text-gray-700 font-semibold mb-2">Child&apos;s Gender</label>
               <select
                 id="childGender"
                 value={childGender}
@@ -97,7 +97,7 @@ const AddChildPage: NextPage = () => {
               </select>
             </div>
             <div className="mb-6">
-              <label htmlFor="childCountry" className="block text-gray-700 font-semibold mb-2">Child's Country</label>
+              <label htmlFor="childCountry" className="block text-gray-700 font-semibold mb-2">Child&apos;s Country</label>
               <select
                 id="childCountry"
                 value={childCountry}
@@ -112,7 +112,7 @@ const AddChildPage: NextPage = () => {
               </select>
             </div>
             <div className="mb-6">
-              <label htmlFor="childSchool" className="block text-gray-700 font-semibold mb-2">Child's School</label>
+              <label htmlFor="childSchool" className="block text-gray-700 font-semibold mb-2">Child&apos;s School</label>
               <input
                 type="text"
                 id="childSchool"
