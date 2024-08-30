@@ -40,7 +40,7 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 
 ## 7. Contact Information
 
-For questions or concerns regarding this Code of Conduct, please contact us at crew@archanaut.com
+For questions or concerns regarding this Code of Conduct, please contact us at ecoacademy@archanaut.com
 
 ---
 
