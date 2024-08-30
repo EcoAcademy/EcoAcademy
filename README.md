@@ -24,7 +24,7 @@ For companies or individuals interested in using EcoAcademy in a proprietary or 
 
 To inquire about obtaining a commercial license, please contact us at:
 
-Email: sales@archanaut.com
+Email: ecoacademy@archanaut.com
 
 More information about the commercial license terms and pricing will be provided upon request.
 
@@ -34,7 +34,7 @@ We welcome contributions from the open-source community! If you'd like to contri
 
 ## Support
 
-If you need help or have any questions, please check our [Documentation](https://academy.archanaut.com/docs) or reach out to our support team at support@ecoacademy.org.
+If you need help or have any questions, please check our [Documentation](https://academy.archanaut.com/docs) or reach out to our support team at ecoacademy@archanaut.com.
 
 ## Acknowledgments
 
