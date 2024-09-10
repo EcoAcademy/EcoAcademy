@@ -79,7 +79,7 @@ const SignUpPage: React.FC = () => {
 
   const goToNextStep = () => {
     let stepErrors: string[] = [];
-
+  
     if (currentStep === 1) {
       if (!formData.email || !formData.username || !formData.password || !formData.confirmPassword) {
         stepErrors.push('Please fill out all fields in the Personal Information section.');
@@ -91,7 +91,7 @@ const SignUpPage: React.FC = () => {
         stepErrors.push('Please fill out all fields in the School and Location section.');
       }
     }
-
+  
     if (stepErrors.length > 0) {
       setErrors(stepErrors);
     } else {
@@ -99,10 +99,11 @@ const SignUpPage: React.FC = () => {
       if (currentStep === 1) {
         setCurrentStep(2);
       } else if (currentStep === 2) {
-        handleSubmit(new Event('submit'));
+        handleSubmit({ preventDefault: () => {} } as React.FormEvent<HTMLFormElement>);
       }
     }
   };
+  
 
   const goToPreviousStep = () => {
     if (currentStep > 1) {

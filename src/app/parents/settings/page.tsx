@@ -34,7 +34,7 @@ const SettingsPage: NextPage = () => {
                 onChange={handleEmailUpdatesChange}
                 className="form-checkbox h-5 w-5 text-orange-500"
               />
-              <span className="ml-2 text-gray-600">Receive email updates about my child's progress and new activities</span>
+              <span className="ml-2 text-gray-600">Receive email updates about my child&apos;s progress and new activities</span>
             </label>
           </div>
           <div className="mb-6">

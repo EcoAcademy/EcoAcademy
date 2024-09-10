@@ -11,7 +11,7 @@ const ShopPage: React.FC = () => {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Tutorials</h1>
         <p className="text-lg text-gray-700">
-          Welcome to EcoAcademy's Tutorials, where you can learn how to use sustainable products and solutions to support your net-zero journey.
+          Welcome to EcoAcademy&apos;s Tutorials, where you can learn how to use sustainable products and solutions to support your net-zero journey.
         </p>
       </div>
 
@@ -40,7 +40,7 @@ const ShopPage: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="bg-white rounded-lg shadow-md p-6">
             <p className="text-gray-700 mb-4">
-              Learn how to save your project so you won't lose it.
+              Learn how to save your project so you won&apos;t lose it.
             </p>
             <Link href="/shop/home-batteries">
               <span className="text-blue-500 hover:underline cursor-pointer">Use</span>

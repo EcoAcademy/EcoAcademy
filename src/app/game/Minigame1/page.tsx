@@ -28,7 +28,7 @@ const Item: React.FC<{ item: ItemType }> = ({ item }) => {
 
   return (
     <div
-      ref={dragRef}
+      ref={dragRef as unknown as React.Ref<HTMLDivElement>}
       style={{
         border: '2px solid #4CAF50',
         padding: '10px',
@@ -63,7 +63,7 @@ const Bin: React.FC<{ type: WasteType; onDrop: (item: ItemType, correct: boolean
 
   return (
     <div
-      ref={dropRef}
+      ref={dropRef as unknown as React.Ref<HTMLDivElement>}
       style={{
         border: `3px solid ${binColors[type]}`,
         padding: '20px',

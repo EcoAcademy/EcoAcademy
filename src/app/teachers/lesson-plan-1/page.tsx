@@ -56,7 +56,7 @@ const LessonPlan1: React.FC = () => {
           <div className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 text-blue-600">Assessment (10 minutes)</h2>
             <p className="text-gray-700 mb-4">
-              Conduct a quick quiz to assess students' understanding of net-zero emissions. Use multiple-choice and short-answer questions based on the lesson content.
+              Conduct a quick quiz to assess students&apos; understanding of net-zero emissions. Use multiple-choice and short-answer questions based on the lesson content.
             </p>
           </div>
 
