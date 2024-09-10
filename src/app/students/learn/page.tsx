@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import Quiz from '../../../components/Quiz'; // Import the Quiz component
 import FAQComponent from '../../../components/FAQ'; // Import the FAQComponent
@@ -26,7 +27,7 @@ const LearnPage: React.FC = () => {
             <div className="w-full sm:w-1/2 lg:w-1/3 mb-8 px-4">
               <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col justify-between">
                 <h2 className="text-2xl font-semibold mb-2 text-center text-blue-600">Solar Panels</h2>
-                <img src="/images/MIT-PPA-1-Press_solar_array_3.jpg" alt="Solar Panels" className="mb-4 rounded-lg shadow-md mx-auto" />
+                <Image src="/images/MIT-PPA-1-Press_solar_array_3.jpg" alt="Solar Panels" className="mb-4 rounded-lg shadow-md mx-auto" />
                 <p className="text-gray-700 mb-4 text-center">
                   Solar panels are like magic! They capture sunlight and turn it into clean, renewable energy. Did you know that a typical solar panel can generate enough electricity to power a light bulb for hours?
                 </p>
@@ -39,7 +40,7 @@ const LearnPage: React.FC = () => {
             <div className="w-full sm:w-1/2 lg:w-1/3 mb-8 px-4 relative">
               <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col justify-between">
                 <h2 className="text-2xl font-semibold mb-2 text-center text-yellow-600">Home Batteries</h2>
-                <img src="/images/download.jpeg" alt="Home Batteries" className="mb-4 rounded-lg shadow-md mx-auto" />
+                <Image src="/images/download.jpeg" alt="Home Batteries" className="mb-4 rounded-lg shadow-md mx-auto" />
                 <p className="text-gray-700 mb-4 text-center">
                   Home batteries save the day! They store energy from solar panels and keep your home powered up, even during blackouts. Imagine never having to worry about running out of power!
                 </p>
@@ -52,7 +53,7 @@ const LearnPage: React.FC = () => {
             <div className="w-full sm:w-1/2 lg:w-1/3 mb-8 px-4">
               <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col justify-between">
                 <h2 className="text-2xl font-semibold mb-2 text-center text-purple-600">Passive houses</h2>
-                <img src="/images/Passivehouse-Balgowlah-Hao-Quan-Cai-640x686.jpg" alt="Eco-friendly Buildings" className="mb-4 rounded-lg shadow-md mx-auto" />
+                <Image src="/images/Passivehouse-Balgowlah-Hao-Quan-Cai-640x686.jpg" alt="Eco-friendly Buildings" className="mb-4 rounded-lg shadow-md mx-auto" />
                 <p className="text-gray-700 mb-4 text-center">
                   Passive houses are superheroes! They use clever designs to save energy and keep the planet smiling. Fun fact: Some passive houses generate more energy than they use, sending the extra back to the grid!
                 </p>

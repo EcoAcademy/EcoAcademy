@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function TeachersPage() {
   return (
@@ -75,7 +76,7 @@ export default function TeachersPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div className="bg-white shadow-md rounded-lg p-6">
             <div className="flex items-center justify-center mb-4">
-              <img src="/icons/lesson-plan-1.svg" alt="Lesson Plan 1" className="w-12 h-12" />
+              <Image src="/icons/lesson-plan-1.svg" alt="Lesson Plan 1" className="w-12 h-12" />
             </div>
             <h3 className="text-xl font-semibold mb-4">Lesson Plan 1</h3>
             <p className="text-gray-700 mb-4">
@@ -89,7 +90,7 @@ export default function TeachersPage() {
           </div>
           <div className="bg-white shadow-md rounded-lg p-6">
             <div className="flex items-center justify-center mb-4">
-              <img src="/icons/lesson-plan-2.svg" alt="Lesson Plan 2" className="w-12 h-12" />
+              <Image src="/icons/lesson-plan-2.svg" alt="Lesson Plan 2" className="w-12 h-12" />
             </div>
             <h3 className="text-xl font-semibold mb-4">Lesson Plan 2</h3>
             <p className="text-gray-700 mb-4">
@@ -103,7 +104,7 @@ export default function TeachersPage() {
           </div>
           <div className="bg-white shadow-md rounded-lg p-6">
             <div className="flex items-center justify-center mb-4">
-              <img src="/icons/lesson-plan-3.svg" alt="Lesson Plan 3" className="w-12 h-12" />
+              <Image src="/icons/lesson-plan-3.svg" alt="Lesson Plan 3" className="w-12 h-12" />
             </div>
             <h3 className="text-xl font-semibold mb-4">Lesson Plan 3</h3>
             <p className="text-gray-700 mb-4">

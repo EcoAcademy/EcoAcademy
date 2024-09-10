@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Creation {
   id: number;
@@ -65,13 +66,13 @@ const ExplorePage: React.FC = () => {
         {creations.map((creation) => (
           <Link key={creation.id} href={creation.projectUrl}>
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <img
+              <Image 
                 src={creation.imageUrl}
                 alt={creation.title}
                 className="w-full h-48 object-cover rounded-md mb-4"
               />
               <div className="flex items-center mb-4">
-                <img
+                <Image
                   src={creation.creator.profilePicture}
                   alt={creation.creator.name}
                   className="w-10 h-10 rounded-full mr-4"

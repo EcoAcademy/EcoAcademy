@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const FunFactsComponent: React.FC = () => {
     const funFacts = [
       {
@@ -23,7 +25,7 @@ const FunFactsComponent: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {funFacts.map((fact, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
-              <img src={fact.image} alt={fact.alt} className="mb-4 rounded-lg shadow-md" />
+              <Image src={fact.image} alt={fact.alt} className="mb-4 rounded-lg shadow-md" />
               <p className="text-gray-700 mb-4">{fact.fact}</p>
             </div>
           ))}
