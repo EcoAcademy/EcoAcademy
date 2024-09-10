@@ -34,10 +34,12 @@ export default function StudentProjectsPage() {
   };
 
   const handleCreateNew = () => {
-    if (mounted && typeof window !== 'undefined') {
+    if (mounted) {
       router.push('/play');
     }
   };
+
+  if (!mounted) return null; // Prevent SSR issues
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">

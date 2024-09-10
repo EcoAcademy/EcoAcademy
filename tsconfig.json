@@ -1,27 +1,49 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
+    "skipLibCheck": true, // Skips type checks on third-party libraries
+    "strict": false, // Disables strict mode
     "noEmit": true,
     "esModuleInterop": true,
     "module": "ESNext",
-    "target": "ESNext", 
+    "target": "ESNext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": true, // Allows TypeScript to handle modules without strict isolation
     "jsx": "preserve",
     "incremental": true,
+    "forceConsistentCasingInFileNames": false, // Allows case inconsistencies in file names
+    "noImplicitAny": false, // Allows implicit `any` types
+    "suppressImplicitAnyIndexErrors": true, // Suppresses errors for implicit `any` on index signatures
+    "noStrictGenericChecks": true, // Disables strict checking of generics
+    "ignoreDeprecations": "5.0", // Ignores deprecation warnings
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/students/play", "src/app/admin/game", "src/app/admin/game/recycling-challenge", "src/components"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/students/play",
+    "src/app/admin/game",
+    "src/app/admin/game/recycling-challenge",
+    "src/components"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

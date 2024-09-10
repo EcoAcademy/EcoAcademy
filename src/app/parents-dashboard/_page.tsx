@@ -1,21 +1,26 @@
 "use client";
+
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect, Suspense } from "react";
 
 export default function ParentsPage() {
   const [userName, setUserName] = useState<string>("");
+  const [mounted, setMounted] = useState(false); // Track component mount state
 
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (searchParams) {
+    setMounted(true); // Ensure component is mounted before using client-side hooks
+    if (mounted && searchParams) {
       const name = searchParams.get("name");
       if (name) {
         setUserName(name);
       }
     }
-  }, [searchParams]);
+  }, [mounted, searchParams]);
+
+  if (!mounted) return null; // Prevent server-side rendering of client-side code
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
