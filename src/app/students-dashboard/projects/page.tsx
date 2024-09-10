@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolderOpen, faPlus } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,12 +13,6 @@ type Project = {
 export default function StudentProjectsPage() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [newProjectName, setNewProjectName] = useState('');
-  const [mounted, setMounted] = useState(false);
-  const router = useRouter();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const handleAddProject = () => {
     if (newProjectName.trim() !== '') {
@@ -34,12 +27,10 @@ export default function StudentProjectsPage() {
   };
 
   const handleCreateNew = () => {
-    if (mounted) {
-      router.push('/play');
+    if (typeof window !== 'undefined') {
+      window.location.href = '/play'; // Navigate to '/play'
     }
   };
-
-  if (!mounted) return null; // Prevent SSR issues
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
