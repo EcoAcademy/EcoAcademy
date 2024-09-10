@@ -50,7 +50,7 @@ const NavBar: React.FC = () => {
 
   const performSearch = (query: string): SearchResult[] => {
     const data: SearchResult[] = [
-      { id: 1, name: 'EcoAcademy Learning Platform', description: 'An innovative platform offering a variety of courses for students of all ages.' },
+      { id: 1, name: 'Green Games', description: 'Games for kids to learn about sustainablty' },
       { id: 2, name: 'Project-Based Learning', description: 'Hands-on projects designed to enhance practical skills and real-world applications.' },
       { id: 3, name: 'Teacher Training Programs', description: 'Comprehensive training programs for educators to improve teaching methodologies.' },
       { id: 4, name: 'Parent Engagement Workshops', description: 'Workshops aimed at empowering parents to support their children’s education effectively.' },

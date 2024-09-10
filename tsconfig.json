@@ -1,4 +1,4 @@
-{                                        
+{
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/students/play", "src/app/game", "src/app/game", "src/app/game/recycling-challenge"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/students/play", "src/app/admin/game", "src/app/admin/game/recycling-challenge", "src/components"],
   "exclude": ["node_modules"]
 }
