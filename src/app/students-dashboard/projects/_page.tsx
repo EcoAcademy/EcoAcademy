@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolderOpen, faPlus } from '@fortawesome/free-solid-svg-icons';
 
-// Define the type for a project
 type Project = {
   id: number;
   name: string;
@@ -13,7 +12,6 @@ type Project = {
 };
 
 export default function StudentProjectsPage() {
-  // Use the Project type with useState
   const [projects, setProjects] = useState<Project[]>([]);
   const [newProjectName, setNewProjectName] = useState('');
   const [mounted, setMounted] = useState(false);
@@ -40,6 +38,8 @@ export default function StudentProjectsPage() {
       router.push('/play');
     }
   };
+
+  if (!mounted) return null; // Prevent SSR issues
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
