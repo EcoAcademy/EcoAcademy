@@ -1,24 +1,23 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { useState, useEffect, Suspense } from "react";
+import Link from 'next/link';
+import { useState, useEffect, Suspense } from 'react';
 
 export default function ParentsPage() {
-  const [userName, setUserName] = useState<string>("");
+  const [userName, setUserName] = useState<string>('');
   const [mounted, setMounted] = useState(false); // Track component mount state
 
-  const searchParams = useSearchParams();
-
   useEffect(() => {
-    setMounted(true); // Ensure component is mounted before using client-side hooks
-    if (mounted && searchParams) {
-      const name = searchParams.get("name");
+    if (typeof window !== 'undefined') {
+      setMounted(true); // Ensure component is mounted before using client-side hooks
+
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get('name');
       if (name) {
         setUserName(name);
       }
     }
-  }, [mounted, searchParams]);
+  }, []);
 
   if (!mounted) return null; // Prevent server-side rendering of client-side code
 
@@ -27,13 +26,10 @@ export default function ParentsPage() {
       <div className="container mx-auto py-12 px-6">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4 text-green-600">
-            {userName ? `Welcome, ${userName}!` : "Welcome to the Parents Section"}
+            {userName ? `Welcome, ${userName}!` : 'Welcome to the Parents Section'}
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            At EcoAcademy, we believe that parents play a crucial role in their
-            child&apos;s learning journey. Here, you can find resources and tools to
-            help support your child&apos;s education and foster their curiosity about
-            sustainability and net-zero.
+            At EcoAcademy, we believe that parents play a crucial role in their child&apos;s learning journey. Here, you can find resources and tools to help support your child&apos;s education and foster their curiosity about sustainability and net-zero.
           </p>
         </div>
 
@@ -73,13 +69,9 @@ export default function ParentsPage() {
         </nav>
 
         <div className="bg-green-100 p-8 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-4 text-green-800">
-            How You Can Support Your Child
-          </h2>
+          <h2 className="text-2xl font-semibold mb-4 text-green-800">How You Can Support Your Child</h2>
           <p className="text-gray-700 mb-6">
-            As a parent, you play a crucial role in your child&apos;s education. Here
-            are some ways you can support your child&apos;s learning about net-zero and
-            sustainability:
+            As a parent, you play a crucial role in your child&apos;s education. Here are some ways you can support your child&apos;s learning about net-zero and sustainability:
           </p>
           <ul className="list-disc list-inside text-gray-700 mb-4">
             <li>Encourage curiosity and ask questions about sustainability topics.</li>
