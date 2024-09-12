@@ -34,7 +34,7 @@ We welcome contributions from the open-source community! If you'd like to contri
 
 ## Support
 
-If you need help or have any questions, please check our [Documentation](https://academy.archanaut.com/docs) or reach out to our support team at ecoacademy@archanaut.com.
+If you need help or have any questions, please check our [Documentation](https://ecoacademy.vercel.app/docs) or reach out to our support team at ecoacademy@archanaut.com.
 
 ## Acknowledgments
 
