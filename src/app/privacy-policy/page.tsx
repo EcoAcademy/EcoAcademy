@@ -73,7 +73,7 @@ const PrivacyPolicy = () => {
                         If you have any questions about this Privacy Policy, please contact us at:
                     </p>
                     <p className="text-gray-700 mb-2">Email: ecoacademy@archanaut.com</p>
-                    {/* <p className="text-gray-700">Address: [EcoAcademy Address]</p> */}
+                    <p className="text-gray-700">Address: 16/69 First Ave, Sawtell NSW 2452</p>
                 </div>
             </div>
         </>
