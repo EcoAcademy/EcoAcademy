@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
 
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">1. Introduction</h2>
                     <p className="text-gray-700 mb-4">
-                        Welcome to EcoAcademy. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose information about you when you use our website located at [ecoacademy.archanaut.com] (the &quot;Site&quot;) and the services provided by EcoAcademy (the &quot;Services&quot;).
+                        Welcome to EcoAcademy. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose information about you when you use our website located at [ecoacademy.vercel.app] (the &quot;Site&quot;) and the services provided by EcoAcademy (the &quot;Services&quot;).
                     </p>
 
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">2. Information We Collect</h2>
@@ -72,8 +72,8 @@ const PrivacyPolicy = () => {
                     <p className="text-gray-700 mb-4">
                         If you have any questions about this Privacy Policy, please contact us at:
                     </p>
-                    <p className="text-gray-700 mb-2">Email: support@[yourwebsite.com]</p>
-                    <p className="text-gray-700">Address: [EcoAcademy Address]</p>
+                    <p className="text-gray-700 mb-2">Email: ecoacademy@archanaut.com</p>
+                    <p className="text-gray-700">Address: 16/69 First Ave, Sawtell NSW 2452</p>
                 </div>
             </div>
         </>

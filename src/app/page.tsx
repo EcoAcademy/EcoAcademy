@@ -89,7 +89,7 @@ const Home: React.FC = () => (
           <li>Encourage your kids to reduce, reuse, and recycle materials to minimize waste.</li>
           <li>Make a fun sorting activity with your kids to teach them about the 3 bins.</li>
           <li>Share EcoAcademy with friends and all join in the fun.</li>
-          <li>Visit archanaut.com.au to learn more.</li>
+          <li>Visit ecoacademy.vercel.app to learn more.</li>
           <li>Plant trees with your family to support reforestation efforts.</li>
         </ul>
       </div>

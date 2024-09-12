@@ -14,7 +14,7 @@ const Terms = () => {
 
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">1. Introduction</h2>
                     <p className="text-gray-700 mb-4">
-                        Welcome to EcoAcademy! These Terms and Conditions (&quot;Terms&quot;) govern your use of our website located at [yourwebsite.com] (the &quot;Site&quot;) and the services provided by EcoAcademy (the &quot;Services&quot;). By accessing or using the Site and Services, you agree to comply with and be bound by these Terms.
+                        Welcome to EcoAcademy! These Terms and Conditions (&quot;Terms&quot;) govern your use of our website located at [ecoacademy.vercel.app] (the &quot;Site&quot;) and the services provided by EcoAcademy (the &quot;Services&quot;). By accessing or using the Site and Services, you agree to comply with and be bound by these Terms.
                     </p>
 
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">2. Changes to These Terms</h2>
