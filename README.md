@@ -41,6 +41,7 @@ If you need help or have any questions, please check our [Documentation](https:/
 We would like to express our gratitude to the following organizations and individuals for their contributions and support:
 
 - Archanaut
+- Daniel Hellier
 
 ## License
 
