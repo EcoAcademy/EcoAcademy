@@ -5,7 +5,7 @@ const Home: React.FC = () => (
   <div className="container mx-auto py-8">
     <h1 className="text-4xl font-bold mb-4 text-center">Welcome to EcoAcademy!</h1>
     <p className="text-gray-900 font-semibold mb-8 text-center">
-      Our mission is to teach kids across Australia about sustainability and what it means for us. 
+      Our mission is to teach kids across Australia about sustainability and how we can save the planet. 
     </p>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div className="bg-blue-100 shadow-md rounded-lg p-4 flex flex-col items-center text-center">
