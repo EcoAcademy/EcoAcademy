@@ -50,7 +50,7 @@ const NavBar: React.FC = () => {
 
   const performSearch = (query: string): SearchResult[] => {
     const data: SearchResult[] = [
-      { id: 1, name: 'Green Games', description: 'Games for kids to learn about sustainablty' },
+      { id: 1, name: 'Green Games', description: 'Games for kids to learn about sustainability' },
       { id: 2, name: 'Project-Based Learning', description: 'Hands-on projects designed to enhance practical skills and real-world applications.' },
       { id: 3, name: 'Teacher Training Programs', description: 'Comprehensive training programs for educators to improve teaching methodologies.' },
       { id: 4, name: 'Parent Engagement Workshops', description: 'Workshops aimed at empowering parents to support their children’s education effectively.' },
@@ -64,7 +64,6 @@ const NavBar: React.FC = () => {
   };
 
   const handleLogin = () => router.push('/login');
-
   const handleLogout = () => {
     setIsLoggedIn(false);
     setUserRole(null);
@@ -125,13 +124,23 @@ const NavBar: React.FC = () => {
                 Logout
               </button>
             ) : (
-              <button
-                onClick={handleLogin}
-                className="bg-white text-orange-500 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
-                aria-label="Login"
-              >
-                Login
-              </button>
+              <>
+                <button
+                  onClick={handleLogin}
+                  className="bg-white text-orange-500 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
+                  aria-label="Login"
+                >
+                  Login
+                </button>
+                <Link href="/signup">
+                  <button
+                    className="bg-white text-orange-500 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
+                    aria-label="Sign Up"
+                  >
+                    Sign Up
+                  </button>
+                </Link>
+              </>
             )}
             <div className="md:hidden flex items-center">
               <button
@@ -189,13 +198,23 @@ const NavBar: React.FC = () => {
                 Logout
               </button>
             ) : (
-              <button
-                onClick={handleLogin}
-                className="bg-black text-green-500 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
-                aria-label="Login"
-              >
-                Login
-              </button>
+              <>
+                <button
+                  onClick={handleLogin}
+                  className="bg-black text-green-500 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
+                  aria-label="Login"
+                >
+                  Login
+                </button>
+                <Link href="/signup">
+                  <button
+                    className="bg-black text-green-500 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
+                    aria-label="Sign Up"
+                  >
+                    Sign Up
+                  </button>
+                </Link>
+              </>
             )}
           </div>
         )}
