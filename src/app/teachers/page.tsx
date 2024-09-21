@@ -14,21 +14,10 @@ export default function TeachersPage() {
       </div>
 
       <div className="flex justify-center space-x-6 mb-12">
-        <Link href="/teachers/login">
-          <div className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer">
-            Login
-          </div>
-        </Link>
         <div className="flex justify-center space-x-6 mb-12">
           <Link href="/students/learn">
             <div className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer">
               What Can You Learn
-            </div>
-          </Link>
-                 
-          <Link href="/students/learn">
-            <div className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer">
-        Sign up
             </div>
           </Link>
         </div>

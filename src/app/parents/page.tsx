@@ -14,16 +14,7 @@ export default function ParentsPage() {
       
       <nav className="mb-8 flex flex-col items-center space-y-4">
         <div className="flex justify-center space-x-4">
-          <Link href="/parents/signup">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg">
-              Sign up
-            </button>
-          </Link>
-          <Link href="/parents/login">
-            <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500">
-              Login
-            </button>
-          </Link>
+          {/* Removed Sign up and Login buttons */}
           <Link href="/parents/resources">
             <button className="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500">
               Resources
