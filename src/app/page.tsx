@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 const Home: React.FC = () => (
   <div className="container mx-auto py-8">
-    {/* Hero Section with Static Image */}
+    {/* Hero Section with Static Image*/}
     <div className="relative w-full h-96">
       <Image
         src="/homepage.webp"
