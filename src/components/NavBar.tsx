@@ -92,10 +92,11 @@ const NavBar: React.FC = () => {
             </Link>
           </div>
           <div className="hidden md:flex space-x-8">
-            <Link href="/students/play" className="text-green-400 hover:text-green-500 font-medium">Create New</Link>
+            <Link href="/students/play" className="text-green-400 hover:text-green-500 font-medium">Play</Link>
             <Link href="/students" className="text-green-400 hover:text-green-500 font-medium">Students</Link>
             <Link href="/teachers" className="text-green-400 hover:text-green-500 font-medium">Teachers</Link>
             <Link href="/parents" className="text-green-400 hover:text-green-500 font-medium">Parents</Link>
+            <Link href="/about" className="text-green-400 hover:text-green-500 font-medium">About Us</Link>
           </div>
           <div className="md:flex items-center space-x-4">
             <form onSubmit={(e) => e.preventDefault()} className="hidden md:flex items-center">
@@ -168,10 +169,11 @@ const NavBar: React.FC = () => {
         </div>
         {isMenuOpen && (
           <div className="md:hidden mt-4 flex flex-col items-center space-y-4">
-            <Link href="/students/play" className="text-white hover:text-gray-200 font-medium">Create New</Link>
+            <Link href="/students/play" className="text-white hover:text-gray-200 font-medium">Play</Link>
             <Link href="/students" className="text-white hover:text-gray-200 font-medium">Students</Link>
             <Link href="/teachers" className="text-white hover:text-gray-200 font-medium">Teachers</Link>
             <Link href="/parents" className="text-white hover:text-gray-200 font-medium">Parents</Link>
+            <Link href="/about" className="text-green-400 hover:text-green-500 font-medium">About Us</Link>
             <form onSubmit={(e) => e.preventDefault()} className="flex items-center mt-4">
               <input
                 type="text"
