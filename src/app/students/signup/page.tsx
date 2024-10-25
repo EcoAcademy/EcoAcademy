@@ -11,9 +11,7 @@ const SignUpPage: React.FC = () => {
     password: '',
     confirmPassword: '',
     gender: '',
-    school: '',
     grade: '',
-    country: '',
   });
   const [currentStep, setCurrentStep] = useState(1);
   const [showPassword, setShowPassword] = useState(false);
@@ -47,10 +45,9 @@ const SignUpPage: React.FC = () => {
       });
 
       if (!response.ok) {
-        throw new Error('Sign up failed');
+        throw new Error('Sign up failed. Please try again.');
       }
 
-      // Assuming signup is successful
       alert('Sign up successful!');
       setFormData({
         email: '',
@@ -58,13 +55,9 @@ const SignUpPage: React.FC = () => {
         password: '',
         confirmPassword: '',
         gender: '',
-        school: '',
         grade: '',
-        country: '',
       });
       setCurrentStep(1);
-
-      // Redirect to Student Dashboard
       router.push('/students-dashboard');
     } catch (error: any) {
       setErrors([error.message]);
@@ -79,7 +72,7 @@ const SignUpPage: React.FC = () => {
 
   const goToNextStep = () => {
     let stepErrors: string[] = [];
-  
+
     if (currentStep === 1) {
       if (!formData.email || !formData.username || !formData.password || !formData.confirmPassword) {
         stepErrors.push('Please fill out all fields in the Personal Information section.');
@@ -87,11 +80,11 @@ const SignUpPage: React.FC = () => {
         stepErrors.push('Passwords do not match.');
       }
     } else if (currentStep === 2) {
-      if (!formData.gender || !formData.school || !formData.grade || !formData.country) {
-        stepErrors.push('Please fill out all fields in the School and Location section.');
+      if (!formData.gender || !formData.grade) {
+        stepErrors.push('Please fill out all fields in the Grade section.');
       }
     }
-  
+
     if (stepErrors.length > 0) {
       setErrors(stepErrors);
     } else {
@@ -103,7 +96,6 @@ const SignUpPage: React.FC = () => {
       }
     }
   };
-  
 
   const goToPreviousStep = () => {
     if (currentStep > 1) {
@@ -220,22 +212,9 @@ const SignUpPage: React.FC = () => {
                 </select>
               </div>
               <div className="mb-6">
-                <label htmlFor="school" className="block text-gray-700 font-semibold mb-2">School</label>
-                <input
-                  type="text"
-                  id="school"
-                  name="school"
-                  value={formData.school}
-                  onChange={handleChange}
-                  required
-                  className="border border-gray-300 p-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  autoComplete="off"
-                />
-              </div>
-              <div className="mb-6">
                 <label htmlFor="grade" className="block text-gray-700 font-semibold mb-2">Grade</label>
                 <input
-                  type="text"
+                  type="number"
                   id="grade"
                   name="grade"
                   value={formData.grade}
@@ -244,29 +223,6 @@ const SignUpPage: React.FC = () => {
                   className="border border-gray-300 p-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   autoComplete="off"
                 />
-              </div>
-              <div className="mb-6">
-                <label htmlFor="country" className="block text-gray-700 font-semibold mb-2">Country</label>
-                <select
-                  id="country"
-                  name="country"
-                  value={formData.country}
-                  onChange={handleChange}
-                  className="border border-gray-300 p-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  required
-                >
-                  <option value="" disabled>Select Country</option>
-                  <option value="United States">United States</option>
-                  <option value="Canada">Canada</option>
-                  <option value="United Kingdom">United Kingdom</option>
-                  <option value="Australia">Australia</option>
-                  <option value="Germany">Germany</option>
-                  <option value="France">France</option>
-                  <option value="India">India</option>
-                  <option value="China">China</option>
-                  <option value="Japan">Japan</option>
-                  <option value="Brazil">Brazil</option>
-                </select>
               </div>
             </div>
           )}
@@ -283,10 +239,10 @@ const SignUpPage: React.FC = () => {
             <button
               type="button"
               onClick={goToNextStep}
-              className={`bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+              className={`bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 ${loading ? 'opacity-50' : ''}`}
               disabled={loading}
             >
-              {currentStep === 2 ? (loading ? 'Submitting...' : 'Submit') : 'Next'}
+              {loading ? 'Signing Up...' : currentStep === 1 ? 'Next' : 'Sign Up'}
             </button>
           </div>
         </form>
