@@ -43,7 +43,7 @@ We would like to express our gratitude to the following organizations and indivi
 - Archanaut
 - Daniel Hellier
 - Edstart Achievement Award Program
-- Hadyen Oakley
+- Hayden Oakley
 - David Hellier
 
 ## License
