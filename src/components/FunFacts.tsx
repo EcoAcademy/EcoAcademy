@@ -1,17 +1,17 @@
 const FunFactsComponent: React.FC = () => {
     const funFacts = [
       {
-        fact: "A single recycled plastic bottle saves enough energy to power a 60-watt light bulb for up to 6 hours!",
+        fact: "A single recycled plastic bottle saves enough energy to power a 60-watt light bulb for 6 hours!",
         image: "/images/plastic-water-bottle-empty-300x300.jpg",
         alt: "Recycled plastic bottle",
       },
       {
-        fact: "Composting 1 ton of food waste prevents the production of 0.25 tons of greenhouse gas emissions!",
+        fact: "Composting 900 kilograms of food waste prevents the production of 225 kilograms of greenhouse gas emissions!",
         image: "/images/compost-fact.jpg",
         alt: "Composting food waste",
       },
       {
-        fact: "Planting a tree can absorb up to 48 pounds of CO2 per year, helping to combat climate change!",
+        fact: "Planting a tree can absorb up to 21 kilograms of Co2 each year!",
         image: "/images/tree-fact.jpg",
         alt: "Tree planting",
       },

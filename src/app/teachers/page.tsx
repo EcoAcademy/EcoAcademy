@@ -6,10 +6,7 @@ export default function TeachersPage() {
       <h1 className="text-4xl font-bold mb-6 text-center">Teachers</h1>
       <div className="mb-10 text-center">
         <p className="text-lg text-gray-700 mb-4">
-          Welcome to the Teachers section of EcoAcademy! Here, you&apos;ll find resources and tools to help you teach students about net-zero and sustainability.
-        </p>
-        <p className="text-lg text-gray-700">
-          Explore our curriculum resources, professional development opportunities, and community forum to enhance your teaching experience.
+          Welcome to the Teachers section of EcoAcademy! Here, you&apos;ll find resources and tools to help your students learn more about net-zero and sustainability.
         </p>
       </div>
 
@@ -23,6 +20,7 @@ export default function TeachersPage() {
         </div>
       </div>
 
+      / *
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
         <div className="bg-white shadow-md rounded-lg p-6">
           <h2 className="text-2xl font-semibold mb-4">Curriculum Resources</h2>
@@ -58,6 +56,7 @@ export default function TeachersPage() {
           </Link>
         </div>
       </div>
+      * /
 
       <div className="bg-indigo-100 p-8 rounded-lg shadow-md text-center">
         <h2 className="text-3xl font-bold mb-6 text-indigo-700">Featured Lesson Plans</h2>

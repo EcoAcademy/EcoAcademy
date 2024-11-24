@@ -222,7 +222,6 @@ const faqData = {
   'why should students be aware of the environmental impact of fast fashion trends': 'Understanding the environmental impact of fast fashion encourages students to make informed choices, support sustainable fashion brands, and reduce textile waste.',
   'how can students influence campus policies to prioritize sustainability': 'Students can participate in student government, join sustainability committees, and propose initiatives that prioritize renewable energy, waste reduction, and sustainable practices on campus.',
   'what role do student-led sustainability audits play in campus sustainability efforts': 'Student-led sustainability audits assess campus practices, identify opportunities for improvement, and promote transparency in sustainability initiatives.',
-  // Additional questions can be added here...
   'how can teachers incorporate sustainability into their curriculum': 'Teachers can integrate sustainability topics into lesson plans across subjects, such as discussing environmental impacts in science or exploring sustainable practices in economics.',
   'why is it important for teachers to model sustainable behaviors in the classroom': 'Modeling sustainable behaviors teaches students by example and reinforces the importance of sustainability in daily actions.',
   'what resources are available for teachers to teach about climate change and environmental issues': 'Teachers can access online resources, educational websites, and lesson plans from environmental organizations to teach about climate change and environmental issues.',
@@ -269,6 +268,7 @@ const faqData = {
   'what are the economic benefits of transitioning to a circular economy model for resource management': 'Transitioning to a circular economy reduces resource dependency, minimizes waste generation, and creates new business opportunities in recycling, remanufacturing, and sustainable product design.',
   'how can policymakers promote sustainable urban planning and development to create livable and resilient cities': 'Policymakers can integrate green building standards, prioritize public transportation and active transportation infrastructure, and preserve green spaces and urban biodiversity.',
   'what policies can governments implement to conserve freshwater resources and improve water quality for communities': 'Governments can enforce water conservation measures, invest in water treatment technologies, protect watersheds, and regulate industrial discharge to safeguard freshwater ecosystems and ensure clean drinking water.',
+
 };
 
 

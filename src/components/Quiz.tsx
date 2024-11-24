@@ -22,12 +22,12 @@ const Quiz: React.FC = () => {
     },
     {
       question: 'Which of these is a renewable energy source?',
-      options: ['Coal', 'Natural Gas', 'Solar Power'],
+      options: ['Coal', 'Gas', 'Solar Power'],
       correctAnswer: 'Solar Power',
     },
     {
       question: 'Which activity contributes to reducing carbon footprint?',
-      options: ['Driving alone in a gas-guzzling car', 'Using public transportation or biking', 'Using disposable plastic bags'],
+      options: ['Driving alone in a petrol car', 'Using public transportation or biking', 'Using disposable plastic bags'],
       correctAnswer: 'Using public transportation or biking',
     },
   ];
@@ -40,7 +40,7 @@ const Quiz: React.FC = () => {
     },
     {
       question: 'Which power type does not emit greenhouse gases?',
-      options: ['Nuclear Energy', 'Solar Power', 'Oil Shale'],
+      options: ['Nuclear Energy', 'Solar Power', 'Oil'],
       correctAnswer: 'Solar Power',
     },
     {
@@ -85,13 +85,13 @@ const Quiz: React.FC = () => {
             className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-full text-xl font-bold shadow-lg transform transition duration-300 hover:scale-105"
             onClick={() => startQuiz('easy')}
           >
-            Easy Quiz
+            Easy!
           </button>
           <button
             className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full text-xl font-bold shadow-lg transform transition duration-300 hover:scale-105"
             onClick={() => startQuiz('hard')}
           >
-            Hard Quiz
+            Hard!
           </button>
         </div>
       ) : showScore ? (

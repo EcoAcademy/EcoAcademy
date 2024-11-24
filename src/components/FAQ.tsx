@@ -31,7 +31,7 @@ const FAQComponent: React.FC = () => {
 
   return (
     <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4 text-green-600">Got questions about Net-Zero?</h2>
+      <h2 className="text-2xl font-bold mb-4 text-green-600">Got questions about Sustainablty?</h2>
       
       <div className="mb-4">
         <input
@@ -39,7 +39,7 @@ const FAQComponent: React.FC = () => {
           value={question}
           onChange={handleQuestionChange}
           className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-green-500"
-          placeholder="Type your question here..."
+          placeholder="Type it here..."
         />
       </div>
 

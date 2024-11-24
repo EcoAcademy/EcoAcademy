@@ -9,7 +9,7 @@ const Home: React.FC = () => (
     {/* Hero Section with Image Background */}
     <div className="relative w-full h-screen">
       <Image
-        src="homepage.webp" // Replace with your actual image path
+        src="/homepage.webp" // Replace with your actual image path
         alt="Earth from Space"
         layout="fill"
         objectFit="cover"

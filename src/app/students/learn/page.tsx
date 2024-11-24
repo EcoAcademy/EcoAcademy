@@ -15,9 +15,9 @@ const LearnPage: React.FC = () => {
     <div className="bg-green-100 py-12 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 text-green-600">Explore Sustainability with Fun!</h1>
+          <h1 className="text-4xl font-bold mb-4 text-green-600">Explore Sustainability!</h1>
           <p className="text-lg text-gray-800">
-            Welcome to the world of sustainability! Discover how we can protect our planet while having a blast.
+            Welcome to the world of sustainability! Discover how we can protect our planet.
           </p>
         </div>
 
@@ -129,9 +129,7 @@ const LearnPage: React.FC = () => {
             )}
           </div>
 
-          <p className="text-gray-700 mt-8">
-            By understanding and practicing sustainability principles, we contribute to a healthier planet and a better future for all living beings.
-          </p>
+
 
           {/* Include the Quiz component */}
           <div className="text-center mb-8 mt-12">
