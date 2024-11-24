@@ -1,6 +1,7 @@
 # EcoAcademy
 
-EcoAcademy is an environmental education platform designed to raise awareness and promote sustainable practices. Our mission is to empower individuals and communities with the knowledge and tools to make a positive impact on the environment.
+EcoAcademy is an environmental education platform designed to raise awareness and promote sustainable practices. 
+Our mission is to empower youth with the knowledge and tools to make a positive impact on the environment.
 
 ## Features
 
