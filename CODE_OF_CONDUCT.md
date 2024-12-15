@@ -26,7 +26,7 @@ The following behaviors are considered unacceptable:
 
 ## 4. Reporting and Enforcement
 
-If you witness or experience unacceptable behavior, please report it immediately to the project team at ecoacademy@archanaut.com. All reports will be handled with discretion and confidentiality.
+If you witness or experience unacceptable behavior, please report it immediately to the project team at ecoacademy@archanaut.com or to me@proplayer919.dev. All reports will be handled with discretion and confidentiality.
 
 The project maintainers are responsible for enforcing this Code of Conduct. They have the right to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that do not align with this Code of Conduct. They may also temporarily or permanently ban any contributor whose behavior is deemed inappropriate, threatening, offensive, or harmful.
 
