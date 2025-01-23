@@ -114,6 +114,31 @@ const Home: React.FC = () => (
       </div>
     </div>
 
+    {/* News Section */}
+    <div className="mt-24 bg-white p-12 rounded-lg shadow-xl text-center">
+      <h2 className="text-4xl sm:text-5xl font-extrabold mb-6 text-gray-800">EcoAcademy's News</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+        <div className="bg-gray-50 shadow-lg rounded-lg p-8">
+          <h3 className="text-3xl font-semibold mb-4">Rasperry Pi Devlopment</h3>
+          <p className="text-gray-700 mb-6">
+          Recently, EcoAcademy has used Rasperry Pi to develop hardware that helps save our planet.
+          </p>
+        </div>
+        <div className="bg-gray-50 shadow-lg rounded-lg p-8">
+          <h3 className="text-3xl font-semibold mb-4">EcoAcademy Grant</h3>
+          <p className="text-gray-700 mb-6">
+          EcoAcademy has been awarded a grant to further develop our project.
+          </p>
+        </div>
+        <div className="bg-gray-50 shadow-lg rounded-lg p-8">
+          <h3 className="text-3xl font-semibold mb-4">EcoBuild Devlopment</h3>
+          <p className="text-gray-700 mb-6">
+            Currently, EcoAcademy is working on a new game called EcoBuild. At the moment, the game is still in development.
+          </p>
+        </div>
+      </div>
+    </div>
+
     {/* Footer */}
     <Footer />
   </div>
