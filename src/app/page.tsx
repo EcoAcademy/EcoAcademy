@@ -100,14 +100,14 @@ const Home: React.FC = () => (
           <img src="/leaf-icon.svg" alt="Leaf Icon" className="w-16 h-16 mb-4 animate-spin-slow" />
           <h3 className="text-2xl font-semibold mb-2">Use Less Energy</h3>
           <p className="text-gray-700 text-center">Choose energy-saving lights and appliances to use less power.</p>
-        </div>
+          </div>
         <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center">
-          <img src="/recycle-icon.svg" alt="Recycle Icon" className="w-16 h-16 mb-4 animate-spin-slow" />
+          {/* Removed the recycle icon */}
           <h3 className="text-2xl font-semibold mb-2">Reduce, Reuse, Recycle</h3>
           <p className="text-gray-700 text-center">Cut down on waste by recycling and using things again.</p>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center">
-          <img src="/tree-icon.svg" alt="Tree Icon" className="w-16 h-16 mb-4 animate-spin-slow" />
+          {/* Removed the tree icon */}
           <h3 className="text-2xl font-semibold mb-2">Plant Trees</h3>
           <p className="text-gray-700 text-center">Help the Earth by planting trees and supporting tree planting projects.</p>
         </div>
