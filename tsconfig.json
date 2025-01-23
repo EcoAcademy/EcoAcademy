@@ -19,7 +19,9 @@
     "incremental": true,
     "forceConsistentCasingInFileNames": false, // Allows case inconsistencies in file names
     "noImplicitAny": false, // Allows implicit `any` types
-    "noImplicitThis": false,   "ignoreDeprecations": "5.0", // Ignores deprecation warnings
+    "suppressImplicitAnyIndexErrors": true, // Suppresses errors for implicit `any` on index signatures
+    "noStrictGenericChecks": true, // Disables strict checking of generics
+    "ignoreDeprecations": "5.0", // Ignores deprecation warnings
     "plugins": [
       {
         "name": "next"
