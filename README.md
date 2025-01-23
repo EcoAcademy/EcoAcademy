@@ -1,6 +1,7 @@
 # EcoAcademy
 
-EcoAcademy is an environmental education platform designed to raise awareness and promote sustainable practices. Our mission is to empower individuals and communities with the knowledge and tools to make a positive impact on the environment.
+EcoAcademy is an environmental education platform designed to raise awareness and promote sustainable practices. 
+Our mission is to empower youth with the knowledge and tools to make a positive impact on the environment.
 
 ## Features
 
@@ -20,7 +21,7 @@ EcoAcademy is available under the GNU General Public License version 3 (GPLv3). 
 
 ### Commercial License
 
-For companies or individuals interested in using EcoAcademy in a proprietary or commercial product, we offer a commercial license. The commercial license allows you to use, modify, and distribute EcoAcademy without adhering to the GPLv3's copyleft obligations.
+We offer a commercial license for companies or individuals interested in using EcoAcademy in a proprietary or commercial product. The license allows you to use, modify, and distribute EcoAcademy without adhering to the GPLv3's copyleft obligations.
 
 To inquire about obtaining a commercial license, please contact us at:
 
@@ -41,6 +42,7 @@ If you need help or have any questions, please check our [Documentation](https:/
 We would like to express our gratitude to the following organizations and individuals for their contributions and support:
 
 - Archanaut
+- Daniel Hellier
 
 ## License
 
