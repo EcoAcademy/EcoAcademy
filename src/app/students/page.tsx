@@ -47,7 +47,7 @@ const StudentsPage: React.FC = () => {
           <div className="text-center bg-white rounded-lg shadow-lg p-8 w-1/3 mx-2">
             <h2 className="text-3xl font-semibold mb-6 text-gray-800">Explore Our Features</h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Discover the various opportunities and resources available to you as a student at EcoAcademy. Whether you&apos;re looking to create, explore, learn, shop, sign up, or log in, we&apos;ve got you covered.
+              Discover the various opportunities and resources available to you as a student at EcoAcademy.
             </p>
           </div>
 

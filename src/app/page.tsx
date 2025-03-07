@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Footer from '../components/Footer';
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap, faChalkboardTeacher, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap, faChalkboardTeacher, faUsers, faLightbulb, faRecycle, faGlassWaterDroplet } from '@fortawesome/free-solid-svg-icons';
 const Home: React.FC = () => {
   // Add smooth scroll effect when page loads
   useEffect(() => {
@@ -100,9 +100,22 @@ const Home: React.FC = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-4">
           <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center">
-            <img src="/leaf-icon.svg" alt="Leaf Icon" className="w-16 h-16 mb-4 animate-spin-slow" />
-            <h3 className="text-2xl font-semibold mb-2">Power Saver Hero! 💡</h3>
+            <FontAwesomeIcon 
+            icon={faLightbulb} className="w-16 h-16 mb-4 animate-spin-slow" />
+            <h3 className="text-2xl font-semibold mb-2">Power Saver Hero!</h3>
             <p className="text-gray-700 text-center">Turn off lights when you leave - just like a superhero's secret hideout!</p>
+          </div>
+          <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center">
+          <FontAwesomeIcon 
+            icon={faRecycle} className="w-16 h-16 mb-4 animate-spin-slow" />
+            <h3 className="text-2xl font-semibold mb-2">Recycler Extraordinaire!</h3>
+            <p className="text-gray-700 text-center">We're all in this together - let's recycle and reduce waste!</p>
+          </div>
+          <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center">
+≈            <FontAwesomeIcon 
+            icon={faGlassWaterDroplet} className="w-16 h-16 mb-4 animate-spin-slow" />
+            <h3 className="text-2xl font-semibold mb-2">Water Winner! </h3>
+            <p className="text-gray-700 text-center">Lets save water together!</p>
           </div>
           {/* Similar changes for other tips... */}
         </div>
@@ -112,7 +125,24 @@ const Home: React.FC = () => {
       <div className="mt-24 bg-white p-12 rounded-lg shadow-xl text-center">
         <h2 className="text-4xl sm:text-5xl font-extrabold mb-6 text-gray-800">What's New at EcoAcademy? 📰</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
-          {/* Update news items with more kid-friendly language... */}
+          <div className="bg-gradient-to-br from-blue-200 to-blue-300 shadow-lg rounded-lg p-8">
+            <h3 className="text-2xl font-semibold mb-4">Raspberry Pi Devolpment</h3>
+            <p className="text-gray-700 mb-6">
+              Recently EcoAcademy has been expirmenting with the Raspberry Pi and building cool projects!
+            </p>
+          </div>
+          <div className="bg-gradient-to-br from-green-200 to-green-300 shadow-lg rounded-lg p-8">
+            <h3 className="text-2xl font-semibold mb-4">EcoAcademy's New Game</h3>
+            <p className="text-gray-700 mb-6">
+              EcoAcademy is currently working on a game called EcoBuild! Look out for it soon!
+            </p>
+          </div>
+          <div className="bg-gradient-to-br from-yellow-200 to-yellow-300 shadow-lg rounded-lg p-8">
+            <h3 className="text-2xl font-semibold mb-4">EcoAcademy's Grant</h3>
+            <p className="text-gray-700 mb-6">
+              EcoAcademy has recently been awarded a grant to expand its programs and reach more students!
+            </p>
+          </div>
         </div>
       </div>
       
