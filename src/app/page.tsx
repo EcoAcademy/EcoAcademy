@@ -9,7 +9,7 @@ const Home: React.FC = () => (
     {/* Hero Section with Image Background */}
     <div className="relative w-full h-screen">
       <Image
-        src="/public/images/2-storyhouse.jpg"
+        src="/homepage.webp"
         alt="Earth from Space"
         layout="fill"
         objectFit="cover"
