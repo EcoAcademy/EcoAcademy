@@ -48,10 +48,9 @@ const About: React.FC = () => {
             <div className="mt-24 bg-gradient-to-r from-blue-50 to-indigo-100 p-12 rounded-lg shadow-xl text-center">
                 <h2 className="text-4xl font-extrabold mb-6 text-indigo-700">Our Values</h2>
                 <ul className="list-disc list-inside text-lg text-gray-700">
-                    <li>Education: We believe in the power of knowledge to drive change.</li>
+                    <li>Education: We believe that everyone deserves to know about our world.</li>
                     <li>Community: Together, we can achieve more and create lasting impact.</li>
                     <li>Innovation: We strive to find new and effective ways to promote sustainability.</li>
-                    <li>Integrity: We are committed to transparency and ethical practices in all our endeavors.</li>
                 </ul>
             </div>
 
