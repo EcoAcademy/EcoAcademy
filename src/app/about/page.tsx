@@ -8,7 +8,7 @@ const About: React.FC = () => {
         <div className="container mx-auto py-8 font-sans">
             
             <div className="text-center mt-12">
-                <h1 className="text-5xl font-extrabold mb-6 text-green-700">About EcoAcademy</h1>
+                <h1 className="text-5xl font-extrabold mb-6 text-green-700">About Us</h1>
                 <p className="text-lg text-gray-700 mb-4 max-w-2xl mx-auto">
                     EcoAcademy is dedicated to educating and empowering individuals about environmental sustainability. Our mission is to inspire students, teachers, and parents to make eco-friendly choices that positively impact our planet.
                 </p>
