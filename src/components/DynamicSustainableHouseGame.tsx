@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import { DndProvider, useDrag } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import ThreeDHouse from '../components/ThreeDHouse';
+import ThreeDHouse from './One-StoryHouse';
 
 const items = [
   { id: 1, name: 'Solar Panel', img: '/images/solar-panel.png', points: 10 },

@@ -1,5 +1,4 @@
-'use client';
-
+"use client";
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -7,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSolarPanel, faTree, faWater, faLeaf, faRecycle, faWind, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { DndProvider, useDrag } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import ThreeDHouse from '../../../components/One-StoryHouse';
+import TwoStoryHouse from '../../../components/Two-StoryHouse';
 
 library.add(faSolarPanel, faTree, faWater, faLeaf, faRecycle, faWind);
 
@@ -94,9 +93,9 @@ const SustainableHouseGame = () => {
   return (
     <DndProvider backend={HTML5Backend}>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
-        <h1 style={{ marginBottom: '20px', color: '#4CAF50', fontSize: '2.5em' }}>Sustainable House Game</h1>
+        <h1 style={{ marginBottom: '20px', color: '#4CAF50', fontSize: '2.5em' }}>Sustainable Two-Story House Game</h1>
         <div style={{ marginBottom: '20px', textAlign: 'center', width: '100%' }}>
-          <ThreeDHouse onDrop={handleDrop} droppedItems={droppedItems} />
+          <TwoStoryHouse onDrop={handleDrop} droppedItems={droppedItems} />
           <p style={{ fontSize: '1.5em', margin: '10px 0' }}>Sustainability Points: {sustainabilityPoints}</p>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
@@ -108,20 +107,4 @@ const SustainableHouseGame = () => {
           <div style={{
             position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
             backgroundColor: 'white', padding: '20px', border: '2px solid #4CAF50', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-            textAlign: 'center'
-          }}>
-            <h2>Congratulations!</h2>
-            <p>You made the house sustainable with {sustainabilityPoints} points!</p>
-            <button onClick={resetGame} style={{ marginTop: '10px', padding: '10px 20px', backgroundColor: '#4CAF50', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
-              Play Again
-            </button>
-          </div>
-        )}
-      </div>
-    </DndProvider>
-  );
-};
-
-const DynamicSustainableHouseGame = dynamic(() => Promise.resolve(SustainableHouseGame), { ssr: false });
-
-export default DynamicSustainableHouseGame;
+            textAlign
