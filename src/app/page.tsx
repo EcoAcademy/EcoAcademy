@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import Footer from '../components/Footer';
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faChalkboardTeacher, faUsers, faLightbulb, faRecycle, faGlassWaterDroplet } from '@fortawesome/free-solid-svg-icons';
@@ -145,10 +144,8 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      
-      <Footer />
     </div>
   );
-};
+}
 
 export default Home;

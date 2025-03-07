@@ -17,6 +17,7 @@
     "@headlessui/react": "^2.1.2",
     "@react-three/drei": "^9.0.0",
     "@react-three/fiber": "^8.0.0",
+    "@vercel/speed-insights": "^1.2.0",
     "classnames": "^2.5.1",
     "fuzzball": "^2.1.2",
     "graphql": "^16.9.0",

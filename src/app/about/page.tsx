@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Footer from '../../components/Footer';
 import Link from 'next/link';
 
 const About: React.FC = () => {
@@ -64,10 +63,8 @@ const About: React.FC = () => {
                     Contact Us
                 </Link>
             </div>
-
-            <Footer />
+            ;
         </div>
-    );
-};
+    );};
 
 export default About;
