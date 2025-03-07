@@ -107,4 +107,20 @@ const SustainableHouseGame = () => {
           <div style={{
             position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
             backgroundColor: 'white', padding: '20px', border: '2px solid #4CAF50', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-            textAlign
+            textAlign: 'center'
+          }}>
+            <h2>Congratulations!</h2>
+            <p>You made the house sustainable with {sustainabilityPoints} points!</p>
+            <button onClick={resetGame} style={{ marginTop: '10px', padding: '10px 20px', backgroundColor: '#4CAF50', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+              Play Again
+            </button>
+          </div>
+        )}
+      </div>
+    </DndProvider>
+  );
+};
+
+const DynamicSustainableHouseGame = dynamic(() => Promise.resolve(SustainableHouseGame), { ssr: false });
+
+export default DynamicSustainableHouseGame;
