@@ -10,17 +10,17 @@ const PlayPage: React.FC = () => {
     {
       name: "1-story House",
       imageSrc: "/58377-768.jpg",
-      link: "/game/one-story",
+      link: "game/one-story",
     },
     {
       name: "2-story House",
       imageSrc: "/2-storyhouse.jpg",
-      link: "/game/two-story",
+      link: "game/two-story",
     },
     {
       name: "Apartment",
       imageSrc: "/e290c270.webp",
-      link: "/game/apartment",
+      link: "game/apartment",
     },
   ];
 
