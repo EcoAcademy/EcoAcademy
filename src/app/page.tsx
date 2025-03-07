@@ -3,7 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 import { useEffect } from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGraduationCap, faChalkboardTeacher, faUsers } from '@fortawesome/free-solid-svg-icons';
 const Home: React.FC = () => {
   // Add smooth scroll effect when page loads
   useEffect(() => {
@@ -41,22 +42,31 @@ const Home: React.FC = () => {
         </div> 
       </div>
 
-      {/* User Categories with Hover Animation */}
-      <div id="categories" className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-24 px-4 sm:px-8">
+            {/* User Categories with FontAwesome Icons */}
+            <div id="categories" className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-24 px-4 sm:px-8">
         <Link href="/students" className="group bg-blue-50 shadow-xl rounded-lg p-8 flex flex-col items-center text-center cursor-pointer hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
-          <img src="/student-icon.svg" alt="Student Icon" className="w-24 h-24 mb-6 group-hover:animate-bounce transition-transform duration-300" />
+          <FontAwesomeIcon 
+            icon={faGraduationCap} 
+            className="w-24 h-24 mb-6 text-blue-500 group-hover:animate-bounce transition-transform duration-300"
+          />
           <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-gray-800">Kids Zone!</h2>
           <p className="text-gray-600">Jump in and start your eco-adventure!</p>
         </Link>
 
         <Link href="/teachers" className="group bg-green-50 shadow-xl rounded-lg p-8 flex flex-col items-center text-center cursor-pointer hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
-          <img src="/teacher-icon.svg" alt="Teacher Icon" className="w-24 h-24 mb-6 group-hover:animate-bounce transition-transform duration-300" />
+          <FontAwesomeIcon 
+            icon={faChalkboardTeacher} 
+            className="w-24 h-24 mb-6 text-green-500 group-hover:animate-bounce transition-transform duration-300"
+          />
           <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-gray-800">Teachers Corner</h2>
           <p className="text-gray-600">Cool tools to teach about our planet!</p>
         </Link>
 
         <Link href="/parents" className="group bg-yellow-50 shadow-xl rounded-lg p-8 flex flex-col items-center text-center cursor-pointer hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
-          <img src="/parent-icon.svg" alt="Parent Icon" className="w-24 h-24 mb-6 group-hover:animate-bounce transition-transform duration-300" />
+          <FontAwesomeIcon 
+            icon={faUsers} 
+            className="w-24 h-24 mb-6 text-yellow-600 group-hover:animate-bounce transition-transform duration-300"
+          />
           <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-gray-800">Parents Place</h2>
           <p className="text-gray-600">Join your kids on their green journey!</p>
         </Link>
