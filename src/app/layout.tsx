@@ -3,12 +3,13 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "EcoAcademy | The Net-Zero Learning Academy",
-  description: "Our mission is to create a fun and free learning space aimed at students, teaching them all about the net-zero world.",
+  title: "EcoAcademy | The Sustainabilty Learning Academy",
+  description: "Our mission is to create a fun and free learning space aimed at students, teaching them all about climate change and sustainability.",
 };
 
 export default function RootLayout({
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavBar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
