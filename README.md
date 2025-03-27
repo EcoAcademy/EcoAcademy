@@ -1,23 +1,13 @@
 # EcoAcademy
 
-EcoAcademy is an environmental education platform designed to raise awareness and promote sustainable practices. 
-Our mission is to empower youth with the knowledge and tools to make a positive impact on the environment.
-
-## Features
-
-- Interactive lessons and modules on various environmental topics
-- Gamified learning experiences to engage users
-- Community forums for discussions and knowledge sharing
-- Personalized learning paths and progress tracking
-- Resources and tools for implementing sustainable practices
+Ecoacademy is an open-source platform built to teach kids about climate change and encourage sustainability.
 
 ## Getting Started
+Visit [Eco Academy](https://ecoacademy.vercel.app). 
 
-To get started with EcoAcademy, you can either use the open-source version or obtain a commercial license.
+### Open-Source Licence.
 
-### Open-Source Version
-
-EcoAcademy is available under the GNU General Public License version 3 (GPLv3). You can find the full license text in the [LICENSE](LICENSE) file.
+EcoAcademy is available under the GNU General Public License version 3 (GPLv3). The full license text is in the [LICENSE](LICENSE) file.
 
 ### Commercial License
 
@@ -25,17 +15,17 @@ We offer a commercial license for companies or individuals interested in using E
 
 To inquire about obtaining a commercial license, please contact us at:
 
-Email: ecoacademy@archanaut.com
+Email: david.hellier@gmail.com
 
 More information about the commercial license terms and pricing will be provided upon request.
 
 ## Contributing
 
-We welcome contributions from the open-source community! If you'd like to contribute to EcoAcademy, please follow our [Contributing Guidelines](CONTRIBUTING.md).
+We welcome contributions from the open-source community! If you'd like to contribute to EcoAcademy, please follow our [Contributing Guidelines](CONTRIBUTING.md). 
 
 ## Support
 
-If you need help or have any questions, please check our [Documentation](https://ecoacademy.vercel.app/docs) or reach out to our support team at ecoacademy@archanaut.com.
+If you need help or have any questions, reach out to our support team at david.hellier@gmail.com.
 
 ## Acknowledgments
 
@@ -43,7 +33,4 @@ We would like to express our gratitude to the following organizations and indivi
 
 - Archanaut
 - Daniel Hellier
-
-## License
-
-EcoAcademy is dual-licensed under the GPLv3 and a commercial license. See the [LICENSE](LICENSE) file for the GPLv3 license text and the [COMMERCIAL-LICENSE](COMMERCIAL-LICENSE) file for information about obtaining a commercial license.
+- proplayer919
